@@ -1,0 +1,12 @@
+﻿@using WebApplication2.Models;
+@{
+    ViewBag.Title = "Əsas səhifə";
+}
+
+
+<h2>Index</h2>
+
+@{
+    var user = Session["user"] as User;
+}
+<h3>Welcome @user.Name </h3>
